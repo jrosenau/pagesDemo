@@ -1,0 +1,45 @@
+
+section{
+    color: white;
+object-position: top;
+}
+p{
+    color: #A5C0DE;
+    font-size: x-large;
+    text-align: center;
+
+}
+p4{
+    color: #A5C0DE;
+    font-size: x-large;
+    text-align: left;
+
+}
+a{
+    object-position: top;
+}
+p1{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+#github img {
+    animation-play-state: paused;
+    animation: driveAway 10s ease-in-out forwards;
+}
+#github-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    visibility: visible;
+}
+
+@keyframes driveAway {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-200%);
+    }
+}

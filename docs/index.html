@@ -12,13 +12,98 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>hier sehen sie code<img src="media/screenshot.png" /></section>
-				<section>do is da frella<img src="media/freller.png" /></section>
-				<section>Slide 2</section>
+			<div class="slides" style="background-image: url(media/HTL_Steyr_Logo.png); background-repeat: no-repeat; background-size: 70px; ">
+
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h3>ITP2 in 3 Jahren</h3>
+					<p>Nach monatelangem programmieren kamen mehrere Projekte zustande...</p>
+
+					</code></pre>
+				</section>
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h3>ITP2 in 3 Jahren</h3>
+					<p4>-> Einführung in GitHub<br>-> Java-Snake<br>-> Java-Taschenrechner<br>-> Java-Minesweeper</p4>
+
+				</section>
+				<section data-transition="convex-in concave-out" data-background="white">
+
+
+					<div id="github">
+						<h4 id="github-text">GitHub</h4>
+						<img src ="media/github.png">
+					</div>
+				</section>
+				<section data-transition="convex">Auschnitt des Java Snake Projekts<img src="media/snakeGame.png" height="400" width="400"/><p>Der oberhalb ersichtliche Screenshot zeigt dass Snake-Spiel<br> mit der Schlange im Ur-Zustand mit Punkestand 0.</p></section>
+				<section data-transition="convex">Code für die Tastatursteuerung der Snake<pre><code>if ((key == KeyEvent.VK_LEFT) && (!rightDirection)) {
+                leftDirection = true;
+                upDirection = false;
+                downDirection = false;
+            }
+
+            if ((key == KeyEvent.VK_RIGHT) && (!leftDirection)) {
+                rightDirection = true;
+                upDirection = false;
+                downDirection = false;
+				...
+            }</code></pre><p>Der Java-Code zeigt die Richtungssteuerung der Schlange via "KeyEvents".</p></section>
+				<section data-transition="convex">Java Taschenrechner Applikation<br><img src="media/calculator.png" width="300" height="250"/><p>Das Bild zeigt eine simple Java-Implementation eines Taschenrechners.</p></section>
+				<section data-transition="convex">Implementierung des Taschenrechners<br><pre><code> switch (operator) {
+      case '+':
+        result = number1 + number2;
+        System.out.println(
+		number1 + " + " + number2 + " = " + result);
+        break;
+
+      case '-':
+        result = number1 - number2;
+        System.out.println(
+		number1 + " - " + number2 + " = " + result);
+        break;
+      ...
+    </code></pre>
+				<p>Der oberhalb abgebildete Codeausschnitt nutzt ein "switch" Statement, <br> um je nach ausgewählten Operator die korrekte Rechenoperation auszuführen.</p></section>
+				<section data-transition="convex">Auschnitt aus dem Java Minesweeper Spiel<br><img src="media/minesweeperCode.png" /><p>Hier wird GUI des Minesweeper-Spiels dargestellt.</p></section>
+				<section data-transition="convex">Codeauszug aus dem Minesweeper spiel  <pre><code data-trim data-noescape>
+public static void draw(Graphics g){
+		Rectangle rect = new Rectangle(frame.width, frame.height);
+		for(int x = 0;x < COLS;x++){
+			for(int y = 0;y < ROWS;y++){
+				matrix[x][y].draw(g);
+			}
+		}if(dead){
+			g.setColor(Color.RED);
+			frame.drawCenteredString(g, "Game Over!");
+		}else if(finish){
+			g.setColor(Color.GREEN);
+			frame.drawCenteredString(g, "You Won!!");
+		}
+  </code></pre><p>Der oberhalb gezeigte Code ist für die Darstellung der Minenfelder,<br> sowie für die Ausgabe der Meldungen über die Spielresultate zuständig.</p></section>
+				<section data-auto-animate style="height: 600px"  >
+					<h3 style="">Zweige der HTL-STEYR</h3>
+					<h2 data-id="title" style="margin-top: 500px; opacity: 0;">With Auto Animate</h2>
+					<div data-id="1" style="background: #A5C0DE; position: absolute; top: 50%; left: 50%; width: 400px; height: 400px; margin: -200px 0 0 -200px; border-radius: 400px;"></div>
+					<div data-id="2" style="background: black; position: absolute; top: 50%; left: 50%; width: 300px; height: 300px; margin: -150px 0 0 -150px; border-radius: 400px;"></div>
+					<div data-id="3" style="background: #A5C0DE; position: absolute; top: 50%; left: 50%; width: 200px; height: 200px; margin: -100px 0 0 -100px; border-radius: 400px;"></div>
+					<div data-id="4" style="background: black; position: absolute; top: 50%; left: 50%; width: 100px; height: 100px; margin: -50px 0 0 -50px; border-radius: 400px;"></div>
+					<div data-id="5" style="background: #A5C0DE; position: absolute; top: 50%; left: 50%; width: 50px; height: 50px; margin: -25px 0 0 -25px; border-radius: 400px;"></div>
+				</section>
+				<section data-auto-animate style="height: 600px" >
+					<h3 style="">Zweige der HTL-STEYR</h3>
+					<h2 data-id="title" style="margin-top: 500px; opacity: 0;">With Auto Animate</h2>
+					<div data-id="1" style="background: #A5C0DE; position: absolute; top: 250px; left: 16%; width: 60px; height: 60px;"><p1>Informationstechnologie</p1></div>
+					<div data-id="2" style="background: black; position: absolute; top: 250px; left: 36%; width: 60px; height: 60px;"><p1>Elektronik</p1></div>
+					<div data-id="3" style="background: #A5C0DE; position: absolute; top: 250px; left: 56%; width: 60px; height: 60px;"><p1>Maschinenbau</p1></div>
+					<div data-id="4" style="background: black; position: absolute; top: 250px; left: 76%; width: 60px; height: 60px;"><p1>Mechatronik</p1></div>
+					<div data-id="5" style="background: #A5C0DE; position: absolute; top: 250px; left: 96%; width: 60px; height: 60px;"><p1>Art&Design</p1></div>
+				</section>
+				<section>
+					<h3>Hier gehts zur Anmeldung:</h3>
+					<img src="media/qrcode.png" width="360" height="360"/>
+				</section>
 			</div>
 		</div>
 
