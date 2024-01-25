@@ -14,7 +14,14 @@ p4{
     font-size: x-large;
     text-align: left;
 
+github2{
 }
+}
+github1{
+
+}
+
+
 a{
     object-position: top;
 }
@@ -24,8 +31,10 @@ p1{
 }
 #github img {
     animation-play-state: paused;
-    animation: driveAway 10s ease-in-out forwards;
+    animation: driveAway 2s ease-in-out forwards;
+
 }
+
 #github-text {
     position: absolute;
     top: 50%;
@@ -37,9 +46,12 @@ p1{
 
 @keyframes driveAway {
     0% {
-        transform: translateY(0);
+        transform: rotate3d(0,3,3,0deg);
     }
     100% {
-        transform: translateY(-200%);
+        transform: rotate3d(0,9,9,360deg);
+        opacity: 0;
+
     }
+
 }
